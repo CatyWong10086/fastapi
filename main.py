@@ -15,6 +15,6 @@ async def get_qa():
             qa = line.split(",")
             if len(qa) < 2:
                 raise HTTPException(status_code=500, detail="QA format error.")
-            return [{'q':qa[0], 'a':qa[1]}]
+            return {'q':qa[0], 'a':qa[1]}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
