@@ -61,4 +61,4 @@ async def retrieve_from_cache():
 
     cached_data = cache_df.iloc[0]
 
-    return [{"ID": cached_data['ID'], "q": cached_data['Q'], "a": cached_data['A'], "Source": "Cache"}]
+    return [{"ID": cached_data['ID'], "q": cached_data['q'], "a": cached_data['a'], "Source": "Cache"}]
