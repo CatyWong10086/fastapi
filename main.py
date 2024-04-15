@@ -31,7 +31,7 @@ async def startup_event():
             print(f"data.csv 包含 {len(data_df)} 行数据。")
 
 # 定义一个 GET 请求的端点，用于从 'data.csv' 中随机检索一条数据
-@app.get("/random_retrieve")
+@app.get("/")
 async def random_retrieve():
     print("正在访问 /random_retrieve 端点。")
     data_df = pd.read_csv('data.csv')
