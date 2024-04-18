@@ -61,4 +61,4 @@ async def retrieve_from_cache():
 
     cached_data = cache_df.iloc[0]
 
-    return [{ "q": cached_data['q'], "a": cached_data['a']}]
+    return [{"正确选项": cached_data['a']}]
